@@ -8,7 +8,7 @@
     <main>
 			<section>
 				{{>title data="All skills" big=true}}
-        <ul>
+                <ul>
 					{{#each skills}}
 				  <li>
 						{{name}}
@@ -24,14 +24,14 @@
 						{{/unless}}
 					</li>
 					{{/each}}
-			  </ul>
+			    </ul>
 			 </section>
 
 			 <section>
 				{{>title data="My hobbies" big=false}}
                 <ol>
 					{{#each hobbies}}
-				  <li>
+				    <li>
 						{{name}}
                         {{#if isMain includeZero=true}} (favorite) {{/if}}
 					</li>
