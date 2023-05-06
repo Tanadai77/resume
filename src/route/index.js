@@ -1,3 +1,4 @@
+
 // Підключаємо технологію express для back-end сервера
 const express = require('express')
 // Cтворюємо роутер - місце, куди ми підключаємо ендпоїнти
@@ -460,85 +461,96 @@ router.get('/bio', function (req, res) {
 
 // ================================================================
 
-router.get('/js', function (req, res) {
-  // res.render генерує нам HTML сторінку
+router.get('/program', function (req, res) {
+  //             ↙ cюди вводимо назву файлу з сontainer
+  res.render('program', {
+    layout: `program`,
 
-  //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('js', {
-    name: 'JavaScript',
-    description:
-      'JavaScript is a popular high-level, dynamic, and interpreted programming language.',
-    history: {
-      year: 1995,
-      founder: 'Brendan Eich',
+    program: {
+      excursion: {
+        name: 'Cultural Tour',
+        location: {
+          city: 'Paris',
+          country: 'France',
+        },
+        date: '2023-06-15',
+        program: [
+          {
+            name: 'Museum Visit',
+            type: 'Art',
+            duration: 3,
+            details: {
+              museum: {
+                name: 'The Louvre',
+                location: {
+                  address: 'Rue de Rivoli',
+                  city: 'Paris',
+                  country: 'France',
+                },
+                exhibits: [
+                  {
+                    name: 'Mona Lisa',
+                    artist: 'Leonardo da Vinci',
+                    description: 'Iconic portrait painting',
+                    audio_guide: true,
+                  },
+                  {
+                    name: 'Winged Victory of Samothrace',
+                    artist: null,
+                    description:
+                      'Ancient Greek statue of Nike, the goddess of victory',
+                    audio_guide: true,
+                  },
+                ],
+              },
+              guide: {
+                name: 'Francois',
+                language: 'French',
+                rating: 4.8,
+              },
+            },
+          },
+          {
+            name: 'Cultural Show',
+            type: 'Music and Dance',
+            duration: 2,
+            details: {
+              venue: {
+                name: 'Moulin Rouge',
+                location: {
+                  address: '82 Boulevard de Clichy',
+                  city: 'Paris',
+                  country: 'France',
+                },
+              },
+              performers: [
+                {
+                  name: 'Mireille Mathieu',
+                  type: 'Chanson singer',
+                },
+                {
+                  name: "Ballet de l'Opéra National de Paris",
+                  type: 'Classical ballet company',
+                },
+              ],
+              guide: {
+                name: 'Sophie',
+                language: 'English',
+                rating: 4.6,
+              },
+            },
+          },
+        ],
+      },
     },
-    types: [
-      'Number',
-      'String',
-      'Boolean',
-      'Null',
-      'Undefined',
-      'Symbol',
-      'Object',
-    ],
-    syntax: {
-      variables: ['var', 'let', 'const'],
-      functions: ['function'],
-      conditionals: ['if', 'else', 'switch'],
-      loops: ['for', 'while', 'do-while'],
-      classes: ['class'],
-    },
-    features: [
-      'First-class functions',
-      'Closures',
-      'Dynamic typing',
-      'Prototype-based inheritance',
-      'Asynchronous programming with Promises and async/await',
-      'Modules with import/export statements',
-    ],
-    libraries: [
-      'jQuery',
-      'React',
-      'Angular',
-      'Vue',
-      'Node.js',
-      'Express.js',
-      'Lodash',
-      'Moment.js',
-    ],
-    tools: [
-      'Babel',
-      'Webpack',
-      'ESLint',
-      'Jest',
-      'Mocha',
-      'Chai',
-      'Selenium',
-      'Cypress',
-    ],
-    community: [
-      {
-        name: 'Stack Overflow',
-        type: 'forum',
-      },
-      {
-        name: 'JavaScript Weekly',
-        type: 'newsletter',
-      },
-      {
-        name: 'The Changelog',
-        type: 'podcast',
-      },
-      {
-        name: 'CSS-Tricks',
-        type: 'blog',
-      },
-    ],
   })
-  //                  ↑↑ сюди вводимо JSON дані
 })
 
 // ================================================================
 
+<<<<<<< HEAD
+=======
+// ================================================================
+>>>>>>> 4a83f9023e912eadea9d2cfdb6f544e2e15ad476
 // Підключаємо роутер до бек-енду
 module.exports = router

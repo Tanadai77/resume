@@ -101,19 +101,24 @@
 														            <div>{{name}}</div>
 														            <div>{{description}}</div>
 														            <div>{{ technologies}}</div>
-                                                                    <ul>
-																	    <li>
-														                    <div>{{team_members.[0].name}}</div>
-														                    <div>{{team_members.[0].title}}</div>
-																	    </li>
-																	</ul>
-																	<ul>
-																	    <li>
-														                    <div>{{team_members.[1].name}}</div>
-														                    <div>{{team_members.[1].title}}</div>
-																	    </li>
-																	 </ul>
-														
+                                                                    <br>
+                                                                    
+																	   
+														                    <div>
+                                                                                 
+                                                                                {{#each team_members}}
+                                                                                    <ul>
+                                                                                        <li>
+														                                    <div>{{name}}</div>
+														                                    <div>{{title}}</div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                {{/each}}
+                                                                                
+                                                                                
+                                                                            </div>
+																	    
+																															
 														        </li>
 															</ul>
 														</div>
