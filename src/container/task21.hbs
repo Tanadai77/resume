@@ -1,0 +1,29 @@
+<main>
+<div class="card">
+    <div class="card-body">
+        <h1 class="text-center text-uppercase">Hello world</h1>
+        <h2 class="text-end text-lowercase">Hello world</h2>
+        <h3 class="text-capitalize">Hello world</h3>
+           </div>
+</div>
+<hr>
+<div class="card">
+    <div class="card-body">
+        {{#with heading}}
+            {{#with main}}
+                <h1>{{title}}</h1>
+                <p>{{text}}</p>
+                <div>
+                    {{#with button_text}}
+                        <button class="btn btn-primary">{{solid}}</button>
+                        <button class="btn btn-outline-primary">{{outline}}</button>
+                    {{/with}}
+                </div>
+            {{/with}}
+        {{/with}}
+    </div>
+</div>
+
+
+
+</main>
