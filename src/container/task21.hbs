@@ -1,0 +1,110 @@
+<main>
+<div class="card">
+    <div class="card-body">
+        <div class="card">
+             <div class="card-body">
+                {{#with heading}}
+                    {{#with main}}
+                        <h1>{{title}}</h1>
+                        <p>{{text}}</p>
+                        <div>
+                            {{#with button_text}}
+                                <button class="btn btn-primary">{{solid}}</button>
+                                 <button class="btn btn-outline-primary">{{outline}}</button>
+                            {{/with}}
+                        </div>
+                    {{/with}}
+                {{/with}}
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                {{#with heading}}
+                    {{#with second}}
+                        <h2>{{title}}</h2>
+                        <p>{{text}}</p>
+                        <div>
+                            {{#with button_text}}
+                                <button class="btn btn-secondary">{{solid}}</button>
+                                <button class="btn btn-outline-secondary">{{outline}}</button>
+                            {{/with}}
+                        </div>
+                    {{/with}}
+                {{/with}}
+            </div>
+         </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                {{#with heading}}
+                    {{#with subblock}}
+                        <h3>{{title}}</h3>
+                        <p>{{text}}</p>
+                        <div>
+                            {{#with button_text}}
+                                <button class="btn btn-dark">{{solid}}</button>
+                                <button class="btn btn-outline-dark">{{outline}}</button>
+                            {{/with}}
+                        </div>
+                    {{/with}}
+                {{/with}}
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="card">
+    <div class="card-body">
+        <div>
+            {{#with nested_display}}
+                <h3 class="display-1">{{title}}</h3>
+                    {{#with children_display}}
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="display-4">{{title}}</div>
+                                <p>{{text}}</p>
+                                <div>
+                                    {{#with button}}
+                                        <button class="btn btn-outline-warning">{{text}}</button>  
+                                    {{/with}}
+                                </div>
+                            </div> 
+                        </div> 
+                    {{/with}}
+                    <h6>{{header_text}}</h6>
+                    {{#with button}}
+                        <button class="btn btn-info">{{text}}</button>
+                    {{/with}}
+            {{/with }}
+        </div>    
+    </div>    
+</div>
+<br>
+<div class="card">
+    <div class="card-body">
+        {{#with paragraph}}
+            <p class="text-uppercase">{{title}}</p>
+            <p class="text-lowercase">{{text}}</p>
+            {{#with button}}
+                <a target="=_blank" href="{{url}}" class-"btn btn-link" >{{text}}</a>
+            {{/with}}
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            {{#each list_name}}
+                                <li>
+                                    <a target="=_blank" href="{{url}}" class-"btn btn-link" >{{text}}</a>
+                                    <a target="=_blank" href="{{url}}" class-"btn btn-link" >{{text}}</a>
+                                </li>
+                            {{/each}} 
+                        </ul>
+                    </div>
+                </div>
+        {{/with}}
+    </div>    
+</div>
+   
+
+
+</main>
