@@ -32,7 +32,7 @@
                     <div class="card" > 
                         <div class="card-body">
                         {{#with picture}}
-                            <img class="card-img-top" src="{{scr}}" alt="{{alt}}">
+                            <img class="card-img-top" src="{{src}}" alt="{{alt}}">
                         {{/with}}
                         <h3 class="card-title">{{title}}</h3>
                         <p class="card-body">{{description}}</p>
@@ -53,8 +53,7 @@
             <br>
             <div class="row gx-5 gy-5">
                 {{#with table}}
-                    <table class="col-12">
-                        <div class="table table-bordered text-bg-success">
+                    <table class="col-12 table table-bordered text-bg-success">                     
                            <thead>
                                 <tr>
                                     {{#each head}} 
@@ -81,8 +80,7 @@
                                         </td>  
                                     </tr>
                                 {{/each}}  
-                             </tbody>     
-                        </div>
+                             </tbody>                            
                     </table>
                 {{/with}} 
             </div>  
@@ -172,23 +170,23 @@
     <hr>
     <div>
         {{#with footer}}
-            <h5>{{title}}</h5>
+            <h5>{{title}}</h5>           
         <div class="row gy-5 gx-5"> 
-            <section class="col-3">
+            <div class="col-3">  
                 {{#each navigation}}
-                    <a href="{{href}}" class="btn btn-link">{{text}}</a>
-                {{/each}}
-            </section>
-            <section class="col-3">
+                    <div class="mb-2"><a href="{{href}}" class="btn btn-link">{{text}}</a></div>
+                {{/each}}      
+            </div>
+            <div class="col-3">
                 {{#each socialMedia}}
-                    <a href="{{link}}" class="btn btn-outline-dark">{{name}}</a>
+                    <div class="mb-2"><a href="{{link}}" class="btn btn-outline-dark">{{name}}</a></div>
                 {{/each}}
-            </section>
-            <section class="col-3">
+            </div>
+            <div class="col-3">
                 {{#each partners}}
-                    <a href="{{link}}" class="btn btn-outline-info">{{name}}</a>
+                    <div class="mb-2"><a href="{{link}}" class="btn btn-outline-info">{{name}}</a></div>
                 {{/each}}
-            </section>
+            </div>
         </div> 
         {{/with}}
      
