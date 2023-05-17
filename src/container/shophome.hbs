@@ -5,9 +5,8 @@
             <div class="card">
                 <div class="nav flex-tabs">
                     {{#each links}}
-                        <a href="{{href}}" class="nav-link m-2">{{text}}</a>
+                        <a class="nav-link {{#if @last}} disabled {{/if}}" href="{{href}}" >{{text}}</a>
                     {{/each}}
-                    <a href="/#" class="nav-link disabled m-2">Disabled</a>
                 </div>  
             </div>
         </div>
@@ -44,17 +43,13 @@
     <div class="row mb-5">
         {{#with goodsBlock}}
             <div class="col-12">
-                <div class="nav nav-tabs mb-4 mt-4">
+                <ul class="nav nav-tabs mb-4 mt-4">
                     {{#each tabs}}
-                        <div class="nav-item">
-                            {{#if isActive}}
-                                <a href="/#" class="nav-link active">{{text}}</a>
-                            {{else}}
-                                <a href="/#" class="nav-link">{{text}}</a>
-                            {{/if}}
-                        </div>
+                                <li class="nav-link {{#if isActive}} active {{/if}} {{#if isDisabled}} disabled {{/if}}">
+                                    {{text}}
+                                </li>
                     {{/each}} 
-                </div>
+                </ul>
             </div>
             
                 {{#each cards}}
@@ -110,12 +105,14 @@
     <hr class="mt-3 mb-3">
     <div class="row gy-5 gx-5 mt-4">        
         {{#each footer}}         
-            <div class="col-2"> 
-                {{#each this}}
-                    <div class="mb-5">
-                        <a href="{{link}}" class="btn btn-link">{{text}}</a>
+            <div class=" nav col-2"> 
+                <div>
+                    {{#each this}}
+                    <div>
+                        <a class="nav-link {{#if @last}} disabled {{/if}}" href="{{this.link}}" >{{this.text}}</a>
                     </div>
                 {{/each}}
+                </div>
             </div>
         {{/each}}
     </div>     
