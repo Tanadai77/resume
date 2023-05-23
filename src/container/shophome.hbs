@@ -51,12 +51,11 @@
                     {{/each}} 
                 </ul>
             </div>
-            
                 {{#each cards}}
                     <div class="col-4">
-                    <div class="card" > 
-                        <div class="card-body">
-                            <img class="card-img-top" src="{{image}}">
+                        <div class="card" > 
+                            <div class="card-body">
+                                <img class="card-img-top" src="{{image}}">
                                 <h3 class="card-title">{{title}}</h3>
                                 {{#if isHot}}
                                     <div class="badge text-bg-warning rounded-pill">HOT!</div>
@@ -66,9 +65,9 @@
                                     <div class="badge text-bg-info rounded-pill">Нове</div>
                                 {{else}}
                                 {{/if}}
-                            <p class="card-body">{{description}}</p>
-                        </div>
-                    </div>  
+                                <p class="card-body">{{description}}</p>
+                            </div>
+                        </div>  
                     </div>   
                 {{/each}}
                            
