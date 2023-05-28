@@ -213,8 +213,7 @@
         </div>
         
         <div class="card mt-2 mb-5">
-            <div class="card-body">
-                
+            <div class="card-body"> 
                 {{#with contacts}}
                 <h3 class="mb-4">{{title}}</h3>
                 <div class="col-12">
@@ -235,39 +234,31 @@
                                             <a href="{{link}}" class="btn btn-outline-danger">{{text}}</a>
                                         {{/if}}  
                                         {{/with}}
-                                    </div>
-                                    
+                                    </div> 
                                 </div>
                             </div>
- 
-</div>
+                        </div>
                         {{/each}}   
-               </div>
-                   </div>
+                    </div>
+                </div>
                 {{/with}}
-                 
             </div>
-        </div>
-        
+        </div> 
     {{/with}}
 </div>
 
-
-            
-     
-         
-    <hr class="col-12">
-    <div class="row">        
-        {{#each footer}}         
-            <div class=" nav col-2"> 
-                <div>
-                    {{#each this}}
+        
+<hr class="col-12">
+<div class="row">        
+    {{#each footer}}         
+        <div class=" nav col-2"> 
+            <div>
+                {{#each this}}
                     <div>
                         <a class="nav-link {{#if @last}} disabled {{/if}}" href="{{this.link}}" >{{this.text}}</a>
                     </div>
                 {{/each}}
-                </div>
             </div>
-        {{/each}}
-    </div>     
-</div>
+        </div>
+    {{/each}}
+</div>     
