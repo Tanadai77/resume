@@ -86,13 +86,9 @@
                 <div class="card-body">            
                     <div class="mb-3">
                         <h5>{{price}}</h5>
+                        {{#if inMarket includeZero=true}} (в наявності) {{/if}}
                     </div>
-                    <div>
-                        {{#if true}}
-                         {{inMarket}}
-                        {{else}}
-                        {{/if}}
-                    </div>
+                    
                     <div>
                         {{#each buttons}}
                             <div class="mb-2">
