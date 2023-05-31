@@ -1,15 +1,17 @@
 
 
-<div class="m-5">
+<div class="row m-5">
     <h3>{{title}}</h3>
     <div class="mb-5 mt-3">
         {{text}}
     </div>
     
     {{#each buttons}}
-        <div class="mb-2">
+   
+        <div class=" col-4 mb-2">
             <a href="{{link}}" target="_blank" class="btn btn-primary">{{text}}</a>
         </div>
+   
     {{/each}}
    
 </div>
