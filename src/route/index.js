@@ -84,6 +84,7 @@ router.get('/skills', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('skills', {
     // ↙ сюди вводимо JSON дані
+    layout: `big`,
 
     page: {
       title: `Resume | Skills`,
@@ -137,7 +138,6 @@ router.get('/skills', function (req, res) {
         },
       ],
     },
-
     footer,
   })
 })
@@ -2852,6 +2852,40 @@ router.get('/shopreview', function (req, res) {
 })
 
 // ================================================================
+
+//              ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/index8', function (req, res) {
+  //             ↙ cюди вводимо назву файлу з сontainer
+  res.render('index8', {
+    // ↙ сюди вводимо JSON дані
+    layout: 'index',
+
+    page: {
+      title: `Resume project`,
+    },
+    name: `Ім'я Прізвище`,
+    title: 'Список сторінок',
+    text: 'Текст про свой проект.',
+    buttons: [
+      {
+        text: 'Skills',
+        link: 'http://localhost:3000/skills/',
+      },
+      {
+        text: 'Summary',
+        link: 'http://localhost:3000/summary',
+      },
+      {
+        text: 'Education',
+        link: 'http://localhost:3000/education',
+      },
+      {
+        text: 'Work',
+        link: 'http://localhost:3000/work',
+      },
+    ],
+  })
+})
 
 // Підключаємо роутер до бек-енду
 module.exports = router
