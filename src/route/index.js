@@ -552,7 +552,7 @@ router.get('/js', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('js', {
-    layout: `basic`,
+    layout: `big`,
 
     name: 'JavaScript',
     description:
@@ -636,7 +636,7 @@ router.get('/car', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('car', {
-    layout: `basic`,
+    layout: `big`,
 
     make: 'Toyota',
     model: 'Camry',
@@ -2882,6 +2882,50 @@ router.get('/index8', function (req, res) {
       {
         text: 'Work',
         link: 'http://localhost:3000/work',
+      },
+      {
+        text: 'Car',
+        link: 'http://localhost:3000/car',
+      },
+      {
+        text: 'js',
+        link: 'http://localhost:3000/js',
+      },
+      {
+        text: 'person',
+        link: 'http://localhost:3000/person',
+      },
+      {
+        text: 'program',
+        link: 'http://localhost:3000/program',
+      },
+      {
+        text: 'shopcart',
+        link: 'http://localhost:3000/shopcart',
+      },
+      {
+        text: 'shophome',
+        link: 'http://localhost:3000/shophome',
+      },
+      {
+        text: 'shoporder',
+        link: 'http://localhost:3000/shoporder',
+      },
+      {
+        text: 'shopprofile',
+        link: 'http://localhost:3000/shopprofile',
+      },
+      {
+        text: 'shopreview',
+        link: 'http://localhost:3000/shopreview',
+      },
+      {
+        text: 'task21',
+        link: 'http://localhost:3000/task21',
+      },
+      {
+        text: 'task31',
+        link: 'http://localhost:3000/task31',
       },
     ],
   })
