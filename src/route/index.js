@@ -2869,7 +2869,7 @@ router.get('/index8', function (req, res) {
     buttons: [
       {
         text: 'Skills',
-        link: 'http://localhost:3000/skills/',
+        link: '/skills',
       },
       {
         text: 'Summary',
