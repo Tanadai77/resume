@@ -2873,59 +2873,59 @@ router.get('/index8', function (req, res) {
       },
       {
         text: 'Summary',
-        link: 'http://localhost:3000/summary',
+        link: '/summary',
       },
       {
         text: 'Education',
-        link: 'http://localhost:3000/education',
+        link: '/education',
       },
       {
         text: 'Work',
-        link: 'http://localhost:3000/work',
+        link: '/work',
       },
       {
         text: 'Car',
-        link: 'http://localhost:3000/car',
+        link: '/car',
       },
       {
         text: 'js',
-        link: 'http://localhost:3000/js',
+        link: '/js',
       },
       {
         text: 'person',
-        link: 'http://localhost:3000/person',
+        link: '/person',
       },
       {
         text: 'program',
-        link: 'http://localhost:3000/program',
+        link: '/program',
       },
       {
         text: 'shopcart',
-        link: 'http://localhost:3000/shopcart',
+        link: '/shopcart',
       },
       {
         text: 'shophome',
-        link: 'http://localhost:3000/shophome',
+        link: '/shophome',
       },
       {
         text: 'shoporder',
-        link: 'http://localhost:3000/shoporder',
+        link: '/shoporder',
       },
       {
         text: 'shopprofile',
-        link: 'http://localhost:3000/shopprofile',
+        link: '/shopprofile',
       },
       {
         text: 'shopreview',
-        link: 'http://localhost:3000/shopreview',
+        link: '/shopreview',
       },
       {
         text: 'task21',
-        link: 'http://localhost:3000/task21',
+        link: '/task21',
       },
       {
         text: 'task31',
-        link: 'http://localhost:3000/task31',
+        link: '/task31',
       },
     ],
   })
